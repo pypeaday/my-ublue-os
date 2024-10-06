@@ -21,10 +21,9 @@ rpm-ostree install vlc
 
 systemctl enable podman.socket
 
-
 # zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions /var/home/nic/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 sudo usermod --shell /usr/bin/zsh nic
 
 # uv
@@ -34,12 +33,12 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 flatpak install flathub org.signal.Signal
 
 # packages/applications
-brew install stow
-brew install neovim
-brew install gitui
-brew install helm
-brew install kubectl
-brew install ansible
+# brew install stow
+# brew install neovim
+# brew install gitui
+# brew install helm
+# brew install kubectl
+# brew install ansible
 
 # clone my dotfiles and then run script to stow stuff after install script every startup
 # sudo zpool import -d /dev/disk/by-id/ata-CT2000BX500SSD1_2412E8A01967-part1 tank #-f
