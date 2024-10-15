@@ -26,7 +26,7 @@ systemctl enable podman.socket
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
 # TODO: also make this a dotfiles install script thing
-git clone https://github.com/zsh-users/zsh-autosuggestions /var/home/nic/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+# git clone https://github.com/zsh-users/zsh-autosuggestions /var/home/nic/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 
 # TODO: do this in a dotfiles install script
 # sudo usermod --shell /usr/bin/zsh nic
