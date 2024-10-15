@@ -22,6 +22,7 @@ rpm-ostree install vlc
 systemctl enable podman.socket
 
 # zsh
+rpm-ostree install zsh 
 # TODO: oh my zsh in install script too... oof
 # sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 # sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
@@ -38,7 +39,8 @@ systemctl enable podman.socket
 # curl -LsSf https://astral.sh/uv/install.sh | sh
 
 
-flatpak install flathub org.signal.Signal
+# TODO: failed build?
+# flatpak install flathub org.signal.Signal
 
 # packages/applications
 # brew install stow
