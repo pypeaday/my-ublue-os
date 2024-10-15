@@ -22,9 +22,13 @@ rpm-ostree install vlc
 systemctl enable podman.socket
 
 # zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+# sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+
 git clone https://github.com/zsh-users/zsh-autosuggestions /var/home/nic/.oh-my-zsh/custom/plugins/zsh-autosuggestions
-sudo usermod --shell /usr/bin/zsh nic
+
+# TODO: do this in a dotfiles install script
+# sudo usermod --shell /usr/bin/zsh nic
 
 # uv
 curl -LsSf https://astral.sh/uv/install.sh | sh
