@@ -25,13 +25,16 @@ systemctl enable podman.socket
 # sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
+# TODO: also make this a dotfiles install script thing
 git clone https://github.com/zsh-users/zsh-autosuggestions /var/home/nic/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 
 # TODO: do this in a dotfiles install script
 # sudo usermod --shell /usr/bin/zsh nic
 
 # uv
-curl -LsSf https://astral.sh/uv/install.sh | sh
+
+# TODO: probably this too
+# curl -LsSf https://astral.sh/uv/install.sh | sh
 
 
 flatpak install flathub org.signal.Signal
