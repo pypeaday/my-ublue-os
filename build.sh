@@ -19,7 +19,11 @@ rpm-ostree install vlc
 
 #### Example for enabling a System Unit File
 
-systemctl enable podman.socket
+# systemctl enable podman.socket
+
+# for syncoid/sanoid
+rpm-ostree install perl-Config-IniFiles perl-Data-Dumper perl-Capture-Tiny perl-Getopt-Long lzop mbuffer mhash pv -- --allow-inactive
+rpm-ostree install perl-CPAN perl-CPAN
 
 # zsh
 rpm-ostree install zsh 
